@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Test OpenPay
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    block stylesheets
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+  body
+      div#header
+        h1.pageTittle.text-center NodeJS Openpay 101
+      #menu
+        
+        div.row#tabs-menu
+          ul.nav.nav-tabs.nav-fill.justify-content-center
+            li.nav-item
+              a.nav-link(href="/registro") Registro
+            li
+              a.nav-link(href="/clientes") Listado de clientes
+      
+      block content
+        
+      div#footer  
+      #scripts
+        script(src="/javascripts/jquery.min.js")
+        script(src="/javascripts/bootstrap.bundle.min.js")
+        block scripts

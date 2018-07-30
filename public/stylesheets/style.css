@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html{
+  background: #085078;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(255, 0, 0, 0.0);
+}
+#header {
+  background: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.8);
+  padding: 15px;
+}
+.pageTittle{
+  text-shadow: -2px 2px 0px rgba(0,230,230,8),
+                 -4px 4px 0px rgba(1,204,204,.8),
+                 -6px 6px 0px rgba(0,189,189,.8);
+}
+#menu {
+  padding: 15px;
+}
+.btn{
+  border: 0px solid #fff !important;
+  border-radius: 0px;
+}
+.btn-primary{
+  background-color: #00bdbd;
+}
+#tabs-menu {
+  margin-left: 4.5rem;
+  border-bottom: 2px solid #fff;
+  margin-right: 4.5rem;
+}
+a.btn {
+  color: #fff;
+}
+a{
+  text-decoration: none !important;
+  color: #fff;
+}
+a:hover{
+  color: #e9ecef;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border-color: #e9ecef #e9ecef #dee2e6;
+}
+#tbl-clientes {
+  width: 100%;
+}
+div.card-header{
+  background: rgba(255,255,255,.5);
+  color:#777;
+}
+div.card * {  font-size: .9rem;}
+div.card {
+  margin: 0rem 5rem 5rem 5rem;
+  color:#fff;
+  background: rgba(250,250,250,.3);
+}
+input{
+  background: rgba(255,255,255,.0) !important;
+  border: 0px solid #fff !important;
+  border-bottom: 1px solid #fff !important;
+  border-radius: 0px !important;
+  transition: all 0.35s linear;
+}
+input:focus{
+  border: 0px solid #fff !important;
+  border-bottom: 1px solid #01cccc !important;
+  transition: all 0.35s linear;
+}
+tbody{
+    border-color:  rgba(255,255,255,.0) !important;
+}
+tbody * {
+  background: rgba(250,250,250,.3) !important;
+}
+#tbl-clientes_wrapper *{
+  color:#fff;
+}
+select{
+  background-color: #777;
+}
+#tbl-clientes_paginate * {
+  color:#fff !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    border: 0px solid #979797 !important;
+    background-color:rgba(255,255,255,.0) !important;
+    background: none !important;
+  }

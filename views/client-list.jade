@@ -1,0 +1,28 @@
+extends layout
+
+block stylesheets
+  link(rel='stylesheet', href='/stylesheets/jquery.dataTables.min.css')
+
+block content
+  div.card
+    div.card-header Clientes registrados
+    div.card-body
+      table#tbl-clientes.display
+        thead
+          tr
+            th Creación
+            th Nombre
+            th Email
+            th Teléfono
+          tfoot
+            tr
+              th Creación
+              th Nombre
+              th Email
+              th Teléfono
+  
+  
+block scripts
+  script(src="/javascripts/jquery.dataTables.min.js")
+  script(src="/javascripts/moment-with-locales.min.js")
+  script(src="/javascripts/listado-clientes.js")

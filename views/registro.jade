@@ -1,0 +1,57 @@
+extends layout
+block content
+
+  #registro-cliente
+    div.card.row.justify-content-md-center
+      div.card-header 
+        h3 Datos del cliente
+      div.card-body
+        form#frm-registro
+          p.card-text.d-none
+            div#mensaje.alert(role="alert")
+            .row
+              div.form-group.col-md
+                label(for="name") Nombre(s)
+                input#name.form-control.form-control-lg(name="name" type="text" required)
+              div.form-group.col-md
+                label(for="last_name") Apellidos
+                input#last_name.form-control.form-control-lg(name="last_name" type="text" required)
+            .row
+              div.form-group.col-md
+                label(for="email") E-mail
+                input#email.form-control.form-control-lg(name="email" type="email" required)
+              div.form-group.col-md
+                label(for="phone_number") Teléfono
+                input#phone_number.form-control.form-control-lg(name="phone_number" type="text" required)
+            br
+            h3  Dirección (Sólo en México)
+            br
+            .row
+              div.form-group.col.col-md-7
+                label(for="dir1") Calle y número
+                input#dir1.form-control.form-control-lg(name="line1" type="text" required)
+              div.form-group-col.col-md-5
+                label(for="dir2") Colonia
+                input#dir2.form-control.form-control-lg(name="line2" type="text" required)
+            .row
+              div.form-group.col-md-4
+                label(for="dir3") Ciudad
+                input#dir3.form-control.form-control-lg(name="line3" type="text" required)
+              div.form-group.col-md-4
+                label(for="city") Municipio
+                input#city.form-control.form-control-lg(name="city" type="text" required)
+              div.form-group.col-md-4
+                label(for="state") Estado
+                input#state.form-control.form-control-lg(name="state" type="text" required)            
+            .row  
+              div.form-group.col-md-2
+                label(for="postal_code") Código postal
+                input#postal_code.form-control.form-control-lg(name="postal_code" type="text" required)
+              
+            p.row.justify-content-md-center
+              button.btn.btn-lg.btn-primary(type="submit") Continuar
+             
+            
+
+block scripts
+  script(src="/javascripts/registro-cliente.js")
